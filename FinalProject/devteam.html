@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> FoC-DevTeam</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+
+            html {
+                scroll-behavior: smooth;
+                scroll-padding-top: 100px;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                color:  #2A3439;
+                margin:0;
+                padding: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            }
+            
+            /* start of menu style */
+            nav { 
+                overflow: hidden;
+                position: fixed;
+                z-index: 1;
+            }
+            
+            ul {
+                overflow: hidden;
+                position: fixed;
+                z-index: 1;
+                float: right;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: rgba(0, 180, 216);
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            
+            li {
+                float: left;
+            }
+            
+            li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 20px 30px;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+            background-color: #0eacf5;
+            }
+
+            .active {
+                background-color: #39BCF9;
+            }
+            /* end of nmenu style */
+
+
+            .p-0 {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+            
+           .p-1 {
+                font-size: 65px;
+                letter-spacing: 3px;
+            }
+
+           .img-0 {
+                max-width: 75%;
+                float: right;
+            }
+
+            .title {
+                line-height: 0;
+            }
+
+            .column {
+                float: left;
+                width: 50%;
+                padding-left: 150px;
+                padding-right: 150px;
+                line-height: 1.6;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            .about {
+                float: left;
+                font-size: 20px;
+                text-align: justify;
+                line-height: 1;
+            }
+
+            .footer {
+                text-align: center;
+                letter-spacing: 1px;
+                font-size:14px;
+                color: #333333;
+            }
+
+
+        </style>
+    </head>
+
+    <body>  
+        <section id = "home">
+
+            <div class = "header" >
+
+                <header>                    
+                    <div class = "nav">
+                        <ul>
+                            <li> <a href = index.html> FUNDAMENTALS OF COMPUTING </a> </li>
+                            <li> <a href = course.html> COURSE </a> </li>
+                            <li> <a href = projects.html > PROJECTS </a> </li>
+                            <li> <a  href = concept.html> CONCEPTS </a> </li>
+                            <li> <a href = databases.html> DATABASES </a> </li>
+                            <li> <a href = documentation.html> DOCUMENTATION </a> </li>
+                            <li> <a class = "active" href = devteam.html> DEV TEAM </a> </li>
+                        </ul>
+                    </div>            
+                </header>
+            </div>
+        </section>
+
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+        <section>
+
+            <center>
+
+                <div class = "title">
+                    <p class = "p-0" > <b> MEET THE </b> </p>
+                    <p class = "p-1"> <b>  TEAM </b> </p>
+
+                </div>
+            </center>
+
+                <div class = "me">
+
+                    <div class = "row">
+
+                        <div class = "column">
+
+                             <img class = "img-0" src = "images/me.png">
+
+                        </div>
+
+                        <div class = "column">
+
+                            <div class = "about">
+                                <p> Scarlet A Salinas </p>
+                                <p> 18 years old </p>
+                                <p>From Benque Viejo del Carmen, Cayo District </p>
+                                <p> Attends The University of Belize, BMP Campus </p>
+                                <p> Majoring in Associate's in Information Tecnology</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br> <br> <br> <br> <br> <br> <br>
+
+                    <footer class = "footer" >
+                        <br> <br> <br> <br> <br> <br>    
+                        <p>@ Powered by UB</p>            
+                    </footer>
+                                            
+                </div>
+
+        </section>
+
+    </body>
+
+</html>

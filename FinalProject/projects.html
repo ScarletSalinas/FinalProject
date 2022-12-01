@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> FoC-Projects</title>
+        <link rel = "stylesheet" href = "projstyle.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <section>
+            <header>                    
+                <div class = "nav">
+                    <ul>
+                        <li> <a href = index.html> FUNDAMENTALS OF COMPUTING </a> </li>
+                        <li> <a href = course.html> COURSE </a> </li>
+                        <li> <a class = "active" href = projects.html > PROJECTS </a> </li>
+                        <li> <a href = concept.html> CONCEPTS </a> </li>
+                        <li> <a href = databases.html> DATABASES </a> </li>
+                        <li> <a href = documentation.html> DOCUMENTATION </a> </li>
+                        <li> <a href = devteam.html> DEV TEAM </a> </li>
+                    </ul>
+                </div>            
+            </header>
+        </section>
+
+        <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+        <section> 
+
+                <div>
+                    <center>
+
+                        <img class = "proj-img" src = "images/projects.png"> 
+                        <h1 class = "title"> Projects </h1>
+                        <p class = "desc"> 
+                            Fundamentals of Computing covers a number of theoretical concepts, these some of their pracitcal applications: </p>
+                        </p>
+
+                    </center>
+                </div>
+
+
+            <br> <br> <br> <br> <br>
+            
+            <div class = "cont-proj"> 
+                
+                <h2> Project 1: Not Logic Gate </h2> 
+
+                <center>   
+                    <hr> <br>
+
+                    <h3> This is an animation of a Not Logic Gate</h3> <br>
+                        
+                </center>
+                
+                <div class = "notgate">
+
+                    <div class = "row">
+                        <div class = "column">
+                            
+                            <center> <h2> Input </h2> </center>
+
+                            <hr class = "hr">
+
+                            <p> <button class = "button" onclick = "document.getElementById('onoff').src = 'images/on.png'"> ON </button> </p>
+                            <p> <button class = "button" onclick = "document.getElementById('onoff').src = 'images/off.png'"> OFF </button> </p>
+                        
+    
+                        </div>
+                        
+                        <div class = "column">
+    
+                            <center> <h2> Output </h2> </center>
+                            <hr class = "hr">
+                            <img class = "img-0" id = "onoff" src = "images/off.png">
+
+    
+                        </div>
+                    </div>
+                       
+                </div>
+
+                <br> <br> <br> <br>
+
+                <h2> Project 2 :  And Logic Gate </h2> 
+                
+                <hr> <br> 
+
+                <div class = "andgate">
+
+                    <center>
+
+                        <h3> This is an animation of an AND Logic Gate: </h3> 
+                        
+                        <hr style = "width: 65%;"> <br>
+
+                        <img class = "img-1" id = "myImage" src = "images/and2off.png">
+
+                        <div class = "row-2">
+
+                            <div class = "column-2">
+        
+                                <button class = "button" onclick = "document.getElementById('myImage').src = 'images/and2off.png'"> 0 AND 0 </button>
+
+                            </div>
+                            
+                            <div class = "column-2">
+        
+                                <button class = "button" onclick = "document.getElementById('myImage').src = 'images/andoffon.png'"> 0 AND 1 </button>
+
+                            </div>
+
+                            <div class = "column-2">
+        
+                                <button class = "button" onclick = "document.getElementById('myImage').src = 'images/andonoff.png'"> 1 AND 0 </button>
+
+                            </div>
+
+                            <div class = "column-2">
+        
+                                <button class = "button" onclick = "document.getElementById('myImage').src = 'images/and2on.png'"> 1 AND 1 </button>
+
+                            </div>
+
+                        </div>
+
+                    </center>
+
+                </div>
+
+                <br> <br> <br> <br>
+
+                <h2> Project 3 : Binary to Hexadecimal Conversion </h2> 
+                
+                <hr>
+
+                <h3> 
+                    Hexadecimal is a numbering system with base 16, used to represent large numbers with fewer digits. 
+                    In this system there are 16 symbols or possible digit values from 0 to 9, 
+                    followed by six alphabetic characters -- A to F.
+                </h3> 
+                <br>
+
+                <div class = "hex-conv">
+                    
+                    <div class = "row">
+
+                        <div class = "column">
+        
+                        <img class = "img-2" src = "images/bintohex.jpg">
+    
+                        </div>
+                        
+                        <div class = "column">
+
+                            <center>
+
+                                <h3>Enter any 4 digit binary number:</h3>
+        
+                                <input type = "number" id = "inputBin" value = "">
+
+                                <button class = "button-2" onclick = "binToHex()"> Submit: </button>
+
+                                <h3> Hexidecimal Value : </h3>
+
+                                <hr>
+
+                                <h1 id = "demo"> </h1>
+
+                                <script>
+                                function binToHex() {
+                                var x = document.getElementById("inputBin").value;
+                                var hexOut = parseInt(x , 2).toString(16).toUpperCase();
+                                document.getElementById("demo").innerHTML = hexOut;
+                                }
+                                </script>
+
+                            </center>
+    
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br> <br> <br> <br>
+
+                <h2> Project 4 : The ASCII Table </h2> 
+                
+                <hr> 
+                
+                <h3>
+                    ASCII (American Standard Code for Information Interchange) is the most common character encoding format for text data in computers and on the internet.
+                    In standard ASCII-encoded data, there are unique values for 128 alphabetic, numeric or special additional characters and control codes.
+                </h3>
+                <br>
+
+                <div class = "ascii-conv">
+
+                    <center>
+
+                        <div class = "ascii-top">
+        
+                        <img class = "img-3" src = "images/ascii2.png">
+
+                        </div>
+                        
+                        <div class = "ascii-bottom">
+            
+                            <h3>Enter any number from 0 to 127 :</h3> <br>
+
+                            <input id = "inputdec">
+                            
+
+                            <button class = "button-2" onclick = "decToASCII()"> Submit </button>
+
+                            <h3> ASCII Value: </h3>
+
+                            <hr class = "bott-hr">
+
+                            <h1 id = "demo-2"> </h1>
+
+                            <script>
+                                function decToASCII() {
+                                x = document.getElementById("inputdec").value;
+                                var res = String.fromCharCode(x);
+                                document.getElementById("demo-2").innerHTML = res;
+                                console.log(res);
+                                }
+                            </script>
+
+                        </div> 
+
+                    </center>
+                
+                </div>
+
+                        <br> <br> <br> <br>
+
+                        <h2> Project 5 : UNICODE </h2> 
+                        
+                        <hr> <br>
+
+
+                <div class = "unicode">
+
+                    <center>
+
+                        <div class = "row">
+
+                            <div class = "column-3">
+
+                            <p> Hangul (Korean writing system) Character Code </p>
+                                
+                            <img class = "img-4" src = "images/uni2.png"> <br>
+        
+                            </div>
+                            
+                            <div class = "column-3">
+
+                                <p> Latin Character Code</p>
+
+                                <img class = "img-5" src = "images/uni0.png"> <br>
+                            
+                            </div>
+
+                        </div>
+
+                        <br>
+
+                        <p> Miscellaneous Symbols Character Code </p>
+                                    
+                        <img class = "img-6" src = "images/uni5.png"> <br>
+
+                        <center>
+                            
+                            <h3> Please input UNICODE number: </h3>
+
+                            <input id = "numb" type = "text">
+
+                            <button class = "button-2" type = "button" onclick = "myFunction()"> Submit </button>
+
+                            <h3> UNICODE Value: </h3> 
+                            
+                            <hr class = "bott-hr">
+
+
+                            <table>
+                                <tr>
+                                    <th> <h1 id = "demo-3"> </h1> </th>
+                                </tr>                       
+                            </table>
+                                                
+                        </center>
+
+                        <script>
+                            function myFunction() {
+                              var x, text;
+                            
+                              x = document.getElementById("numb").value;
+                            
+                              
+                                text = x;
+                                unicode = ("&#x" + x)
+                              
+                              document.getElementById("demo-3").innerHTML = unicode;
+                            }
+                            </script>
+                                                            
+                </div>
+
+                <br> <br> <br> <br>
+
+                <h2> Project 6 : Machine Language Instructions </h2> 
+                
+                <hr>
+
+                <div class = "MLinstrucitons">
+
+                    <center>
+
+                        <h3> A Simple Interactive Machine Language: </h3> 
+
+                    </center>
+
+                    <div>
+
+                        <div class = "row">
+
+                            <div class = "column">
+
+                                 <img class = "img-7" id = "MLinstrucitons" src = "images/MLblank.png" >
+                            
+                            </div>
+
+                            <div class = "column"> 
+
+                                <img class = "img-8" id = "Englishinstrucitons" src = "" >
+
+                            </div>
+
+                    </div>    
+                     
+                    <br>
+
+                    <div>
+                        <center>
+
+                             <button class = "button" onclick = "document.getElementById('MLinstrucitons').src ='images/ML1.png'; document.getElementById('Englishinstrucitons').src = 'images/EI1.png'"> 156C </button>
+                             <button class = "button" onclick = "document.getElementById('MLinstrucitons').src ='images/ML2.png'; document.getElementById('Englishinstrucitons').src = 'images/EI2.png'"> 166D </button>
+                             <button class = "button" onclick = "document.getElementById('MLinstrucitons').src ='images/ML3.png'; document.getElementById('Englishinstrucitons').src = 'images/EI3.png'"> 5056 </button>
+                             <button class = "button" onclick = "document.getElementById('MLinstrucitons').src ='images/ML4.png'; document.getElementById('Englishinstrucitons').src = 'images/EI4.png'"> 306E </button>
+                             <button class = "button" onclick = "document.getElementById('MLinstrucitons').src ='images/ML5.png'; document.getElementById('Englishinstrucitons').src = 'images/EI5.png'"> C000 </button>
+                             
+                        </center> 
+                    </div>    
+                        
+                </div>
+
+            </div>
+
+            <footer class = "footer" >
+                <br> <br> <br> <br> <br> <br> <br> <br>  
+                <p>@ Powered by UB</p>            
+            </footer>
+
+        </section> 
+        
+
+    </body>
+</html>
